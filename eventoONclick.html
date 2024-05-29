@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evento Onclick</title>
+        <link href="./eventoOnclick.css" rel="stylesheet">
+        <script src="./eventoOnclick.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <h1 class="nav-title">Dojonary</h1>
+                <input type="text" id="search" name="search" placeholder="Search"><br>
+                <button class="btn" onclick="logOut(this)">Login</button>
+        </div> 
+        <div class="maincontent">
+            <div class="definitions">
+                <div class="def-box">
+                    <div class="wordspecifics">
+                        <h1 class="word">ninja</h1>
+                        <p>noun</p>
+                        <p>Plural:<span>Ninjas</span></p>
+                        <button class="likes" onclick="like(this)">13 likes</button>
+                    </div>
+                    <div>
+                        <p class="concept">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu.</a></p>
+                    </div>
+                </div>
+                <div class="def-box">
+                    <div class="wordspecifics">
+                        <h1 class="word">ninja</h1>
+                        <p>noun</p>
+                        <p>Plural:<span>Ninjas</span></p>
+                        <button class="likes" onclick="like(this)">37 likes</button>
+                    </div>
+                    <div>
+                        <p class="concept">A <a href="#">programer</a> who breaks down problems with <a href="#">zen</a>-like focus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leftcolumn">
+                <p>Dojonary is defined by <span id="you">YOU</span></p>
+                <button class="AddDef" onclick="hide(this)">Add definition</button>
+            </div>
+        </div>
+    </body>
+</html>
